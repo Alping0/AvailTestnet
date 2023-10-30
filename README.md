@@ -32,19 +32,13 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
 
 ## 2. Install Avail and Run
 
-``git clone https://github.com/availproject/avail.git``
-
-``screen -S availnode``
-
-``cd avail``
-
-``cargo build --release -p data-avail``
-
-``mkdir -p output``
-
-``git checkout v1.7.2``
-
-``cargo run --locked --release -- --chain kate -d ./output``
+```git clone https://github.com/availproject/avail.git```
+```screen -S availnode```
+```cd avail```
+```cargo build --release -p data-avail```
+```mkdir -p output```
+```git checkout v1.7.2```
+```cargo run --locked --release -- --chain kate -d ./output```
 
 ***Now your node is running in screen press "Ctrl+a+d" while running your node and left the screen.***
 ***Use ``screen -r`` to return back to screen***
@@ -58,7 +52,8 @@ nano /etc/systemd/system/availd.service
 
 ***Moniker is your validator name***
 
-```[Unit]
+```
+[Unit]
 Description=Avail Validator
 After=network.target
 StartLimitIntervalSec=0
