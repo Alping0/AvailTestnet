@@ -64,27 +64,16 @@ Telemetry: https://telemetry.avail.tools/
 ```[Unit]
 
 Description=Avail Validator
-
 After=network.target
-
 StartLimitIntervalSec=0
-
 [Service]
-
 User=root
-
 ExecStart= /root/avail/target/release/data-avail --base-path `pwd`/data --chain kate --name "Moniker"
-
 Restart=always
-
 RestartSec=120
-
 [Install]
-
 WantedBy=multi-user.target
-
 ```
-
 
 Save it: CTRL+X Yes Enter.
 
