@@ -14,29 +14,8 @@ Telemetry: https://telemetry.avail.tools/
 
 **1. Install Rust**
 
-var copy = function(target) {
-    var textArea = document.createElement('textarea')
-    textArea.setAttribute('style','width:1px;border:0;opacity:0;')
-    document.body.appendChild(textArea)
-    textArea.value = target.innerHTML
-    textArea.select()
-    document.execCommand('copy')
-    document.body.removeChild(textArea)
-}
 
-var pres = document.querySelectorAll(".comment-body > pre")
-pres.forEach(function(pre){
-  var button = document.createElement("button")
-  button.className = "btn btn-sm"
-  button.innerHTML = "copy"
-  pre.parentNode.insertBefore(button, pre)
-  button.addEventListener('click', function(e){
-    e.preventDefault()
-    copy(pre.childNodes[0])
-  })
-})
-
-``sudo apt update && sudo apt upgrade -y
+sudo apt update && sudo apt upgrade -y
 sudo apt install build-essential
 sudo apt install --assume-yes git clang curl libssl-dev protobuf-compiler
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -44,7 +23,7 @@ source ~/.cargo/env
 rustup default stable
 rustup update
 rustup update nightly
-rustup target add wasm32-unknown-unknown --toolchain nightly``
+rustup target add wasm32-unknown-unknown --toolchain nightly
 
 **2. Install Avail and Run**
 
