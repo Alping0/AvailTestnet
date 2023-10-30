@@ -4,7 +4,9 @@ Guide for installing Avail Node on Ubuntu 20.04 &amp; 22.04
 ## System Requirements (Recommended)
 
 CPU: 4 core
+
 RAM: 8 GB
+
 Storage(SSD): 200-300 GB
 
 ## Useful Links
@@ -16,7 +18,8 @@ Telemetry: https://telemetry.avail.tools/
 ## 1. Install Rust
 
 
-```sudo apt update && sudo apt upgrade -y
+```
+sudo apt update && sudo apt upgrade -y
 sudo apt install build-essential`
 sudo apt install --assume-yes git clang curl libssl-dev protobuf-compiler
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -48,7 +51,8 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
 
 ## 3. Create Systemd
 
-```touch /etc/systemd/system/availd.service
+```
+touch /etc/systemd/system/availd.service
 nano /etc/systemd/system/availd.service
 ```
 
