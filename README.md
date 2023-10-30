@@ -25,6 +25,13 @@ rustup update
 rustup update nightly
 rustup target add wasm32-unknown-unknown --toolchain nightly
 
+import copyCodeBlock from '@pickra/copy-code-block';
+// OR
+const copyCodeBlock = require('@pickra/copy-code-block');
+
+import anHtmlFile from './anHtmlFile.html';
+copyCodeBlock(anHtmlFile);
+
 **2. Install Avail and Run**
 
 git clone https://github.com/availproject/avail.git
