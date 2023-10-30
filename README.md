@@ -14,7 +14,7 @@ Telemetry: https://telemetry.avail.tools/
 
 **1. Install Rust**
 
-sudo apt update && sudo apt upgrade -y
+``sudo apt update && sudo apt upgrade -y``
 sudo apt install build-essential
 sudo apt install --assume-yes git clang curl libssl-dev protobuf-compiler
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
