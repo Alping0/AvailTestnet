@@ -10,6 +10,7 @@ Storage(SSD): 200-300 GB
 ## Useful Links
 
 Form: https://docs.google.com/forms/d/e/1FAIpQLScvgXjSUmwPpUxf1s-MR2C2o5V79TSoud1dLPKVgeLiLFuyGQ/viewform
+
 Telemetry: https://telemetry.avail.tools/
 
 ## 1. Install Rust
@@ -60,27 +61,27 @@ Telemetry: https://telemetry.avail.tools/
 
 ***Moniker is your validator name***
 
-``[Unit]``
+```[Unit]
 
-``Description=Avail Validator``
+Description=Avail Validator
 
-``After=network.target``
+After=network.target
 
-``StartLimitIntervalSec=0``
+StartLimitIntervalSec=0
 
-``[Service]`` 
+[Service]
 
-``User=root``
+User=root
 
-``ExecStart= /root/avail/target/release/data-avail --base-path `pwd`/data --chain kate --name "Moniker"``
+ExecStart= /root/avail/target/release/data-avail --base-path `pwd`/data --chain kate --name "Moniker"
 
-``Restart=always``
+Restart=always
 
-``RestartSec=120``
+RestartSec=120
 
-``[Install]`` 
+[Install]
 
-``WantedBy=multi-user.target``
+WantedBy=multi-user.target```
 
 
 Save it: CTRL+X Yes Enter.
