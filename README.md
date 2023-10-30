@@ -32,7 +32,9 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
 
 ## 2. Install Avail and Run
 
-```git clone https://github.com/availproject/avail.git```
+```
+git clone https://github.com/availproject/avail.git
+```
 ```screen -S availnode```
 ```cd avail```
 ```cargo build --release -p data-avail```
