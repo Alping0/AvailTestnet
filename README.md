@@ -20,12 +20,9 @@ Telemetry: https://telemetry.avail.tools/
 
 ```
 sudo apt update && sudo apt upgrade -y
-sudo apt install build-essential`
-sudo apt install --assume-yes git clang curl libssl-dev protobuf-compiler
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source ~/.cargo/env
-rustup default stable
-rustup update
+sudo apt install make clang pkg-config libssl-dev build-essential git screen protobuf-compiler -y
+curl https://sh.rustup.rs -sSf | sh
+source $HOME/.cargo/env
 rustup update nightly
 rustup target add wasm32-unknown-unknown --toolchain nightly
 ```
