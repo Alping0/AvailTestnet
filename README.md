@@ -33,7 +33,8 @@ source $HOME/.cargo/env
 ```
 rustup update nightly
 ```
-```rustup target add wasm32-unknown-unknown --toolchain nightly
+```
+rustup target add wasm32-unknown-unknown --toolchain nightly
 ```
 
 ## 2. Install Avail and Run
