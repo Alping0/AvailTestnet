@@ -21,7 +21,8 @@ Telemetry: https://telemetry.avail.tools/
 ```
 sudo apt update && sudo apt upgrade -y
 ```
-```sudo apt install make clang pkg-config libssl-dev build-essential git screen protobuf-compiler -y
+```
+sudo apt install make clang pkg-config libssl-dev build-essential git screen protobuf-compiler -y
 ```
 ```
 curl https://sh.rustup.rs -sSf | sh
