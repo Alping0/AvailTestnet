@@ -82,19 +82,27 @@ Save it: CTRL+X Yes Enter.
 
 To enable this to autostart on bootup run:
 
-``systemctl enable availd.service``
+```
+systemctl enable availd.service
+````
 
 Start it manually with:
 
-``systemctl start availd.service``
+```
+systemctl start availd.service
+```
 
 You can check that it's working with:
 
-``systemctl status availd.service``
+```
+systemctl status availd.service
+```
 
 You can see the logs with:
 
-``journalctl -f -u availd``
+```
+journalctl -f -u availd
+```
 
 
 
